@@ -63,3 +63,86 @@ Identificar o perfil dos usuários com maior probabilidade de sair da plataforma
 - Pandas, NumPy
 - Seaborn, Matplotlib
 - Scikit-Learn
+
+English version
+
+🎯 Streaming Churn Prediction
+This project aims to predict which users of a streaming platform are most likely to cancel their subscription (churn), using supervised classification algorithms.
+
+📌 Objective
+Identify the profile of users most likely to leave the platform, enabling the business to implement preventive actions and more effective retention strategies.
+
+🧪 Project Steps
+
+Exploratory Data Analysis (EDA)
+
+Dataset loading
+
+Descriptive statistics (describe, info, isna().sum())
+
+Distribution plots using Seaborn, inspired by the Python Graph Gallery
+
+Cleaning and Preprocessing
+
+Handling and removing missing values
+
+Encoding categorical variables with get_dummies and LabelEncoder
+
+Normalization with MinMaxScaler
+
+Baseline Modeling
+
+Logistic Regression applied as the baseline model
+
+Evaluation using confusion matrix and classification_report
+
+Supervised Tuning
+
+RandomForestClassifier applied with clear separation of tasks (fit, predict, assign, ConfusionMatrixDisplay)
+
+Optimized Modeling with GridSearchCV
+
+Hyperparameter tuning using GridSearchCV
+
+Final evaluation and comparison
+
+Profile Analysis
+
+Extraction of the most influential variables for churn using feature_importances_
+
+Visualization with barplot (viridis palette)
+
+Strategic conclusion based on the most relevant features
+
+🔍 Results
+Top 5 most relevant variables for churn:
+
+Num_active_profiles
+
+Gender_Male
+
+Devices_connected
+
+Subscription_type_Premium
+
+Subscription_type_Standard
+
+Highest risk churn profile:
+
+Users with few active profiles
+
+Male users
+
+Few connected devices
+
+Even when subscribed to paid plans like Premium or Standard
+
+💼 Technologies Used
+
+Python
+
+Pandas, NumPy
+
+Seaborn, Matplotlib
+
+Scikit-Learn
